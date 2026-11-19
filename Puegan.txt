@@ -1,0 +1,1053 @@
+commit 3131c82c4f46ba0d78782eb1c06f9e46c4d3761b
+Author:     Nakiri6996 <pueganmayer@gmail.com>
+AuthorDate: 2026-11-07 14:25:13 +0000
+Commit:     Nakiri6996 <pueganmayer@gmail.com>
+CommitDate: 2026-11-07 14:25:13 +0000
+
+    Add WebTech labs and Emmet laboratory
+
+diff --git a/WebTech/HTML-LAB/My-Portfolio/about.html b/WebTech/HTML-LAB/My-Portfolio/about.html
+new file mode 100644
+index 0000000..3a18c06
+--- /dev/null
++++ b/WebTech/HTML-LAB/My-Portfolio/about.html
+@@ -0,0 +1,42 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>About</title>
++</head>
++<body>
++    <header>
++        <h1>About Me</h1>
++    </header>
++
++    <nav>
++        <a href="index.html">HOME</a> | 
++        <a href="about.html">ABOUT</a> | 
++        <a href="education.html">EDUCATION</a> | 
++        <a href="skills.html">SKILLS</a> | 
++        <a href="contact.html">CONTACT</a>
++    </nav>
++    <hr>
++    <main>
++        <article>
++            <h2>Personal Background</h2>
++            <p>I am a student at the University of the Cordilleras and my course is Bachelor in Information Technology and my major is Web Technologies/Development.</p>
++            <img src="images/hobbies.jpg" alt="Hobby" width="300" height="200">
++        </article>
++        <section>
++            <h3>My Core Principles</h3>
++            <ol>
++                <li>Continuous Learning & Adaptation</li>
++                <li>Writing Clean, Accessible Code</li>
++                <li>Collaborative Teamwork</li>
++                <li>User-Centric Design Thinking</li>
++            </ol>
++        </section>
++    </main>
++     <footer>
++        <hr>
++        <p>&copy; 2026 Mayer Puegan. All rights reserved.</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/My-Portfolio/contact.html b/WebTech/HTML-LAB/My-Portfolio/contact.html
+new file mode 100644
+index 0000000..62e88dd
+--- /dev/null
++++ b/WebTech/HTML-LAB/My-Portfolio/contact.html
+@@ -0,0 +1,65 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Contact</title>
++</head>
++<body>
++    <header>
++        <h1>Contact Me</h1>
++    </header>
++
++    <nav>
++        <a href="index.html">HOME</a> | 
++        <a href="about.html">ABOUT</a> | 
++        <a href="education.html">EDUCATION</a> | 
++        <a href="skills.html">SKILLS</a> | 
++        <a href="contact.html">CONTACT</a>
++    </nav>
++    <hr>
++
++    <main>
++        <section>
++            <h2>Get in Touch</h2>
++            <p>If you would like to collaborate or have any inquiries, please fill out the form below:</p>
++
++            <!-- Functional-looking HTML Form Requirement -->
++            <form action="#" method="POST">
++                <div>
++                    <label for="name">Name:</label><br>
++                    <input type="text" id="name" name="name" required placeholder="Your full name">
++                </div>
++                <br>
++
++                <div>
++                    <label for="email">Email:</label><br>
++                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
++                </div>
++                <br>
++
++                <div>
++                    <label for="subject">Subject:</label><br>
++                    <input type="text" id="subject" name="subject" required placeholder="Message subject">
++                </div>
++                <br>
++
++                <div>
++                    <label for="message">Message:</label><br>
++                    <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
++                </div>
++                <br>
++
++                <div>
++                    <button type="submit">Send Message</button>
++                    <button type="reset">Clear Form</button>
++                </div>
++            </form>
++        </section>
++    </main>
++    <footer>
++        <hr>
++        <p>&copy; 2026 Mayer Puegan. All rights reserved.</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/My-Portfolio/education.html b/WebTech/HTML-LAB/My-Portfolio/education.html
+new file mode 100644
+index 0000000..733062c
+--- /dev/null
++++ b/WebTech/HTML-LAB/My-Portfolio/education.html
+@@ -0,0 +1,33 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Education</title>
++</head>
++<body>
++    <header>
++        <h1>Educational Background</h1>
++    </header>
++
++    <nav>
++        <a href="index.html">HOME</a> | 
++        <a href="about.html">ABOUT</a> | 
++        <a href="education.html">EDUCATION</a> | 
++        <a href="skills.html">SKILLS</a> | 
++        <a href="contact.html">CONTACT</a>
++    </nav>
++    <hr>
++    <main>
++        <section>
++            <h2>Academic Journey</h2>
++            <p>Below is an image of my educational institution.</p>
++            <img src="images/school.jpg" alt="School campus photo" width="350" height="220">
++        </section>
++    </main>
++    <footer>
++        <hr>
++        <p>&copy; 2026 Mayer Puegan. All rights reserved.</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/My-Portfolio/images/hobbies.jpg b/WebTech/HTML-LAB/My-Portfolio/images/hobbies.jpg
+new file mode 100644
+index 0000000..d199ad9
+Binary files /dev/null and b/WebTech/HTML-LAB/My-Portfolio/images/hobbies.jpg differ
+diff --git a/WebTech/HTML-LAB/My-Portfolio/images/profile.png b/WebTech/HTML-LAB/My-Portfolio/images/profile.png
+new file mode 100644
+index 0000000..c0138ca
+Binary files /dev/null and b/WebTech/HTML-LAB/My-Portfolio/images/profile.png differ
+diff --git a/WebTech/HTML-LAB/My-Portfolio/images/school.jpg b/WebTech/HTML-LAB/My-Portfolio/images/school.jpg
+new file mode 100644
+index 0000000..b1d9366
+Binary files /dev/null and b/WebTech/HTML-LAB/My-Portfolio/images/school.jpg differ
+diff --git a/WebTech/HTML-LAB/My-Portfolio/index.html b/WebTech/HTML-LAB/My-Portfolio/index.html
+new file mode 100644
+index 0000000..8ba09f5
+--- /dev/null
++++ b/WebTech/HTML-LAB/My-Portfolio/index.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Home</title>
++</head>
++<body>
++    <header>
++        <h1>My Personal Web Portfolio</h1>
++        <p>Welcome to my professional portfolio website.</p>
++    </header>
++    <nav>
++        <a href="index.html">HOME</a> | 
++        <a href="about.html">ABOUT</a> | 
++        <a href="education.html">EDUCATION</a> | 
++        <a href="skills.html">SKILLS</a> | 
++        <a href="contact.html">CONTACT</a>
++    </nav>
++    <hr>
++    <main>
++        <section>
++            <h2>Welcome!</h2>
++            <p>Hello, I am Mayer Puegan. This website serves as a showcase of my personal background, education, technical skills, and multimedia interests.</p>
++            <img src="images/profile.png" alt="Profile" width="150" height="250">
++        </section>
++        <section>
++            <h3>Quick Highlights</h3>
++            <ul>
++                <li>Passionate Web Development Student</li>
++                <li>IT Student</li>
++                <li>Aspiring Developer</li>
++            </ul>
++        </section>
++        <section>
++            <h3>External Links</h3>
++            <p>Check out some of my favorite platforms:</p>
++            <ol>
++                <li><a href="https://www.github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
++                <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
++                <li><a href="https://www.stackoverflow.com" target="_blank" rel="noopener noreferrer">Stack Overflow</a></li>
++            </ol>
++        </section>
++        </main>
++
++    <footer>
++        <hr>
++        <p>&copy; 2026 Mayer Puegan. All rights reserved.</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/My-Portfolio/skills.html b/WebTech/HTML-LAB/My-Portfolio/skills.html
+new file mode 100644
+index 0000000..8e8db70
+--- /dev/null
++++ b/WebTech/HTML-LAB/My-Portfolio/skills.html
+@@ -0,0 +1,59 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Skills</title>
++</head>
++<body>
++    <h1>Technical Skills</h1>
++    </header>
++
++    <nav>
++        <a href="index.html">HOME</a> | 
++        <a href="about.html">ABOUT</a> | 
++        <a href="education.html">EDUCATION</a> | 
++        <a href="skills.html">SKILLS</a> | 
++        <a href="contact.html">CONTACT</a>
++    </nav>
++    <hr>
++    <main>
++        <section>
++            <h2>Skill Proficiency Table</h2>
++            <p>Here is an overview of my current capabilities across various technologies:</p>
++
++            <!-- Table Requirement -->
++            <table border="1" cellpadding="8" cellspacing="0">
++                <thead>
++                    <tr>
++                        <th>Skill</th>
++                        <th>Level</th>
++                        <th>Experience</th>
++                    </tr>
++                </thead>
++                <tbody>
++                    <tr>
++                        <td>HTML</td>
++                        <td>Intermediate</td>
++                        <td>3 months</td>
++                    </tr>
++                    <tr>
++                        <td>CSS</td>
++                        <td>Beginner</td>
++                        <td>2 Weeks</td>
++                    </tr>
++                    <tr>
++                        <td>JavaScript</td>
++                        <td>Intermediate</td>
++                        <td>5 Months</td>
++                    </tr>
++                </tbody>
++            </table>
++        </section>
++    </main>
++    <footer>
++        <hr>
++        <p>&copy; 2026 Mayer Puegan. All rights reserved.</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/PersonlaProfile/about.html b/WebTech/HTML-LAB/PersonlaProfile/about.html
+new file mode 100644
+index 0000000..30a91f5
+--- /dev/null
++++ b/WebTech/HTML-LAB/PersonlaProfile/about.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>About</title>
++</head>
++<body>
++    <nav>
++        <a href="index.html">Home</a> |
++        <a href="about.html">About</a> |
++        <a href="skills.html">Skills</a> |
++        <a href="contact.html">Contact</a> |
++    </nav>
++    <hr>
++
++    <main>
++    <section>
++        <h2>Personal Instroduction</h2>
++        <p>Hello! My name is Mayer. i am dedicated to learning full-stack web technologies and creating user_friendly digital experiences.</p>
++        <img src="profile.png" alt="Mayer Puegan" width="150" height="150">
++    </section>
++    <section>
++        <h2>Career Goals</h2>
++        <p>My objective is to grow into a professional Frontend Web Developer, building scalable and responsive web applications for global clients.</p>
++    </section>
++    <section>
++        <h2>Hobbies</h2>
++        <ul>
++            <li>Coding Side projects</li>
++            <li>Reading tech blogs</li>
++            <li>Photography</li>
++            <li>Playing video games</li>
++            <li>Listening to Music</li>
++            <li>Eating</li>
++            <li>Sleeping</li>
++        </ul>
++    </section>
++    <section>
++        <ul>
++            <li>Open-source software</li>
++            <li>UI/UX Design Trends</li>
++            <li>Artificial Intelligence</li>
++        </ul>
++    </section>
++    </main>
++    <footer>
++        <p>&copf; 2026, Mayer Puegan</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/PersonlaProfile/contact.html b/WebTech/HTML-LAB/PersonlaProfile/contact.html
+new file mode 100644
+index 0000000..9bf423b
+--- /dev/null
++++ b/WebTech/HTML-LAB/PersonlaProfile/contact.html
+@@ -0,0 +1,48 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Contact</title>
++</head>
++<body>
++     <nav>
++        <a href="index.html">Home</a> |
++        <a href="about.html">About</a> |
++        <a href="skills.html">Skills</a> |
++        <a href="contact.html">Contact</a> |
++    </nav>
++    <hr>
++    <main>
++        <h1>Contact Me</h1>
++        <p>Have a question or want to collaborate? Fill out tje form below to reach out!</p>
++        <form action="#" method="post">
++            <div>
++                <label for="name">Name</label><br>
++                <input type="text" name="name" id="name" required placeholder="Your full name">
++            </div>
++            <br>
++            <div>
++                <label for="email">Email</label><br>
++                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
++            </div>
++            <div>
++                <label for="subject">Subject:</label><br>
++                <input type="text" id="subject" name="subject" required placeholder="Subject of your message">
++            </div>
++            <br>
++            <div>
++                <label for="message">Message:</label><br>
++                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
++            </div>
++            <br>
++            <div>
++                <button type="submit">Submit</button>
++            </div>
++        </form>
++    </main>
++    <footer>
++        <p>&copf; 2026, Mayer Puegan</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/PersonlaProfile/index.html b/WebTech/HTML-LAB/PersonlaProfile/index.html
+new file mode 100644
+index 0000000..2f15487
+--- /dev/null
++++ b/WebTech/HTML-LAB/PersonlaProfile/index.html
+@@ -0,0 +1,31 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Home</title>
++</head>
++<body>
++    <nav>
++        <a href="index.html">Home</a> |
++        <a href="about.html">About</a> |
++        <a href="skills.html">Skills</a> |
++        <a href="contact.html">Contact</a> |
++    </nav>
++    <hr>
++    <header>
++        <h1>Welcome to my Website</h1>
++    </header>
++    <main>
++        <section>
++            <h2>Mayer Puegan</h2>
++            <p><strong>Short Intrduction</strong> I am a passionate web development student learing how to craft modern, accessible web page.</p>
++            <p>Welcome message: Thanks for visting my personal portfolio site! Feel free to explore my background, technical skills, and get in touch through the contact page.</p>
++        </section>
++    </main>
++    <footer>
++        <hr>
++        <p>&copy; 2026 Mayer Puegan</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/PersonlaProfile/skills.html b/WebTech/HTML-LAB/PersonlaProfile/skills.html
+new file mode 100644
+index 0000000..b607231
+--- /dev/null
++++ b/WebTech/HTML-LAB/PersonlaProfile/skills.html
+@@ -0,0 +1,52 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Skills</title>
++</head>
++<body>
++     <nav>
++        <a href="index.html">Home</a> |
++        <a href="about.html">About</a> |
++        <a href="skills.html">Skills</a> |
++        <a href="contact.html">Contact</a> |
++    </nav>
++    <hr>
++
++    <main>
++        <h1>My Skills</h1>
++        <p>Here is an overview of my current technical proficiencies and experience levels:s</p>
++        <table border="1" cellpadding="8" cellspacing="0">
++            <thead>
++                <tr>
++                    <th>Skill</th>
++                    <th>Level</th>
++                    <th>Experience</th>
++                </tr>
++            </thead>
++            <tbody>
++                <tr>
++                    <td>HTML</td>
++                    <td>Moderate</td>
++                    <td>3 Months</td>
++                </tr>
++                <tr>
++                    <td>JavaScript</td>
++                    <td>Moderate</td>
++                    <td>5 Months</td>
++                </tr>
++                <tr>
++                    <td>Python</td>
++                    <td>Beginner</td>
++                    <td>2 Weeks</td>
++                </tr>
++            </tbody>
++        </table>
++    </main>
++    <footer>
++        <hr>
++        <p>&copy; 2026 Mayer Puegan</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/about.html b/WebTech/HTML-LAB/about.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/WebTech/HTML-LAB/contact.html b/WebTech/HTML-LAB/contact.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/WebTech/HTML-LAB/formatting.html b/WebTech/HTML-LAB/formatting.html
+new file mode 100644
+index 0000000..57602f7
+--- /dev/null
++++ b/WebTech/HTML-LAB/formatting.html
+@@ -0,0 +1,38 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lab_Activity_2:_HTML_Text_Formatting</title>
++</head>
++<h1>Lab Activity 2: HTML Text Formatting</h1>
++<body>
++    The b tag means <b>Bold Text</b> - it is used to draw arrention to text without implying any extra imporance or emphasis
++    <p></p>
++    The strong tag means <strong>Strong Importance</strong> - it indicates that the text has high relevance, urgency, or importance.
++    <p></p>
++    The i tag means <i>Italic Text</i> - it represents text in an alternate voice or mood, such as technical terms, idioms, or thoughts.
++    <p></p>
++    The em tag means <em>Emphasized Text</em> - it means text that has stressed emphasis, which changes the meaning of the sentence when spoken aloud.
++    <p></p>
++    The u tag means <u>Underlined Text</u> - it represents text with a non-textual annotation.
++    <p></p>
++    The mark tag means <mark>Highlighted Text</mark> - it marks the text that has been hoghlighted or marked for reference purposes due to its relevance in a specific context.
++    <p></p>
++    The small tag means <small>Small Text</small> - it renders text one size smaller.
++    <p></p>
++    The del tag means <del>Deleted Text</del> - it represents text that has been deleted or removed from the document.
++    <p></p>
++    The ins tag means <ins>Insterted Text</ins> - it represents text that has been added or inserted into the document.
++    <p></p>
++    The sub tag means <sub>Subscript Text</sub> - it renders text half a character height lower than the normal line.
++    <p></p>
++    The sup tag means <sup>Superscript Text</sup> - it renders text half acharacter height higher than the normal line.
++    <p></p>
++    <h4>Challenge Activity</h4>
++    <h4>====================</h4>
++    H<sub>2</sub>O
++    <p></p>
++    E = mc<sup>2</sup>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/images.html b/WebTech/HTML-LAB/images.html
+new file mode 100644
+index 0000000..1c6e324
+--- /dev/null
++++ b/WebTech/HTML-LAB/images.html
+@@ -0,0 +1,18 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lab_Activity_5:_Images</title>
++</head>
++<h1>Lab Activity 5: Images</h1>
++<body>
++    <h1>Personal Profile</h1>
++    <a href="about.html">
++        <img src="images/profile.png" 
++        alt="Puegan, Mayer" 
++        width="200" 
++        height="200">
++    </a>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/images/profile.png b/WebTech/HTML-LAB/images/profile.png
+new file mode 100644
+index 0000000..c0138ca
+Binary files /dev/null and b/WebTech/HTML-LAB/images/profile.png differ
+diff --git a/WebTech/HTML-LAB/index.html b/WebTech/HTML-LAB/index.html
+new file mode 100644
+index 0000000..637a585
+--- /dev/null
++++ b/WebTech/HTML-LAB/index.html
+@@ -0,0 +1,26 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lab_Activity_1:_My_First_Web_Page</title>
++</head>
++<h1>Lab Activity 1: My First Web Page</h1>
++<h2>====================</h2>
++<h3>My Personal Webpage</h3>
++<h2>====================</h2>
++<body>
++    Mayer B. Puegan
++
++    Bachelor of Science in Information Technology
++    Major in Web Technology
++
++    <h4>About Me</h4>
++    <h4>----------------</h4>
++    Good day to you everyone, I am Mayer and I live in Longlong, Puguis, La Trinidad, Benguet
++    I graduated elementary at Epiphany Christian Academy and Highschool at Cordillera Career Development College with the STEM track.
++    <h4>My Hobbies</h4>
++    <h4>----------------</h4>
++    I mainly enjoy gaming, listening to music, and sleeping.
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/links.html b/WebTech/HTML-LAB/links.html
+new file mode 100644
+index 0000000..e9f9191
+--- /dev/null
++++ b/WebTech/HTML-LAB/links.html
+@@ -0,0 +1,22 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lab_Activity_4:_Links_and_Navigation</title>
++</head>
++<h1>Lab Activity 4: Links and Navigation</h1>
++<body>
++    <a href="https://google.com">Google</a>
++    <p></p>
++    <a href="https://youtube.com">YouTube</a>
++    <p></p>
++    <a href="https://github.com">GitHub</a>
++    <p></p>
++    <a href="www.uc-bcf.edu.ph">UC Website</a>
++    <h3>Internal Links</h3>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/lists.html b/WebTech/HTML-LAB/lists.html
+new file mode 100644
+index 0000000..4d69d55
+--- /dev/null
++++ b/WebTech/HTML-LAB/lists.html
+@@ -0,0 +1,46 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lab_Activity_3:_Lists</title>
++</head>
++<h1>Lab Activity 3: Lists</h1>
++<body>
++    <h3>A. Unordered List</h3>
++    <h4>Favorite Foods</h4>
++    <ul>
++        <li>Fried Eggs</li>
++        <li>Sisig</li>
++        <li>Bulalo</li>
++        <li>Fried Chicken</li>
++        <li>Boneless Bangus</li>
++    </ul>
++    <h3>B. Ordered List</h3>
++    <h4>Top 5 Programming Languages</h4>
++    <ol>
++        <li>JavaScript</li>
++        <li>Python</li>
++        <li>Java</li>
++        <li>PHP</li>
++        <li>C#</li>
++    </ol>
++    <h3>C. Nested List</h3>
++    <ul>
++        <li>Computer Science
++    <ul>
++        <li>Programmning
++    <ul>
++        <li>Java</li>
++        <li>Python</li>
++        <li>PHP</li>
++    </ul>
++        <li>Web Development</li>
++    <ul>
++        <li>HTML</li>
++        <li>CSS</li>
++        <li>JavaScript</li>
++    </ul>
++
++</body>
++</html>
+diff --git a/WebTech/HTML-LAB/registration.html b/WebTech/HTML-LAB/registration.html
+new file mode 100644
+index 0000000..b79e72f
+--- /dev/null
++++ b/WebTech/HTML-LAB/registration.html
+@@ -0,0 +1,69 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lab_Activity_7:_HTML_FORMS</title>
++</head>
++<h1>Lab Activity 7: HTML Forms</h1>
++<body>
++    <h1>Student Registration</h1>
++    <p>Please fill out the form below to register for the upcoming semester.</p>
++
++    <form action="#" method="post">
++        <div>
++            <label for="Fullname">Full Name:</label><br>
++            <input type="text" id="Fullname" name="Fullname" required minlength="2" maxlength="50" placeholder="e.g., Juan Dela Cruz">
++        </div>
++        <br>
++        <div>
++            <label for="studentid">Student ID:</label><br>
++            <input type="text" id="studentid" name="studentid" required placeholder="e.g., 2*-2***-2**">
++        </div>
++        <br>
++        <div>
++            <label for="email">Email Address:</label><br>
++            <input type="email" id="email" name="email" required placeholder="student@example.com">
++        </div>
++        <br>
++        <div>
++            <label for="password">Password:</label><br>
++            <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
++        </div>
++        <br>
++        <div>
++            <label for="birthday">Birthday:</label><br>
++            <input type="date" id="birthday" name="birthday" required>
++        </div>
++        <br>
++        <div>
++            <label>Gender:</label><br>
++            <input type="radio" id="Male" name="Gender" value="Male" required>
++            <label for="male">Male</label>
++
++            <input type="radio" id="female" name="gender" value="Female">
++            <label for="female">Female</label>
++
++            <input type="radio" id="other" name="gender" value="Other">
++            <label for="other">Other</label>
++        </div>
++        <br>
++        <div>
++            <label for="program">Program/Course</label><br>
++            <select name="program" id="program" required>
++                <option value="">Select Your Program</option>
++                <option value="BSIT">BS Information Technology</option>
++                <option value="BSCS">BS Computer Science</option>
++            </select>
++        </div>
++        <div>
++            <label for="address">Address</label><br>
++            <textarea name="adress" id="address" rows="3" placeholder="Enter your complete home address"></textarea>  
++        </div>
++        <div>
++            <button type="submit">Submit Registration</button>
++            <button type="reset">Reset Form</Form></button>
++        </div>
++    </form>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/WebTech/HTML-LAB/schedule.html b/WebTech/HTML-LAB/schedule.html
+new file mode 100644
+index 0000000..ad2df8e
+--- /dev/null
++++ b/WebTech/HTML-LAB/schedule.html
+@@ -0,0 +1,171 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Lab_Activity_6:_Class_Schedule</title>
++</head>
++<h1>Lab Activity 6: Class Schedule</h1>
++<body>
++  <table border="1" cellpadding="8" cellspacing=""0>
++    <th>
++      <tr>
++        <th>Day</th>
++        <th>Time</th>
++        <th>Subject</th>
++        <th>Room</th>
++        <th>Instructor</th>
++      </tr>
++    </th>
++    <tbody>
++      <tr>
++        <td rowspan="2">Monday</td>
++        <td>7:30 - 8:50</td>
++        <td>SocSci101N</td>
++        <td>S237</td>
++        <td>Ma'am Florida</td>
++      </tr>
++      <tr>
++        <td>8:50 - 10:10</td>
++        <td>Science100</td>
++        <td>S230</td>
++        <td>Ma'am Jill</td>
++      </tr>
++
++      <tr>
++        <td rowspan="7">Tuesday</td>
++        <td>7:30 - 8:50</td>
++        <td>CIT5</td>
++        <td rowspan="2">U805</td>
++        <td>Sir Meing</td>
++      </tr>
++      <tr>
++        <td>8:50 - 10:10</td>
++        <td>CIT1</td>
++        <td>Ma'am Ortiz</td>
++      </tr>
++      <tr>
++        <td>10:10 - 11:30</td>
++        <td>PathFit4</td>
++        <td>Gym</td>
++        <td>Sir Garickson</td>
++      </tr>
++      <tr>
++        <td>11:30 - 12:50</td>
++        <td>CIT14 Lab</td>
++        <td>M304</td>
++        <td rowspan="2">Sir Prim</td>
++      </tr>
++      <tr>
++        <td>12:50 - 2:10</td>
++        <td>CIT14 Lec</td>
++        <td>U705</td>
++      </tr>
++      <tr>
++        <td>3:30 - 4:50</td>
++        <td>CC5 Lec</td>
++        <td>G403</td>
++        <td>Ma'am Anna</td>
++      </tr>
++      <tr>
++        <td>4:50 - 6:10</td>
++        <td>CC5 Lab</td>
++        <td>M305</td>
++        <td>Sir Jessie</td>
++      </tr>
++      <tr>
++        <td rowspan="2">Wednesday</td>
++        <td>7:30 - 8:50</td>
++        <td>SocSci101N</td>
++        <td>S237</td>
++        <td>Ma'am Florida</td>
++      </tr>
++      <tr>
++        <td>8:50 - 10:10</td>
++        <td>Science100</td>
++        <td>S230</td>
++        <td>Ma'am Jill</td>
++      </tr>
++      <tr>
++        <td rowspan="7">Tuesday</td>
++        <td>7:30 - 8:50</td>
++        <td>CIT5</td>
++        <td rowspan="2">U805</td>
++        <td>Sir Meing</td>
++      </tr>
++      <tr>
++        <td>8:50 - 10:10</td>
++        <td>CIT1</td>
++        <td>Ma'am Ortiz</td>
++      </tr>
++      <tr>
++        <td>10:10 - 11:30</td>
++        <td>PathFit4</td>
++        <td>Gym</td>
++        <td>Sir Garickson</td>
++      </tr>
++      <tr>
++        <td>11:30 - 12:50</td>
++        <td>CIT14 Lab</td>
++        <td>M304</td>
++        <td rowspan="2">Sir Prim</td>
++      </tr>
++      <tr>
++        <td>12:50 - 2:10</td>
++        <td>CIT14 Lec</td>
++        <td>U705</td>
++      </tr>
++      <tr>
++        <td>3:30 - 4:50</td>
++        <td>CC5 Lec</td>
++        <td>G403</td>
++        <td>Ma'am Anna</td>
++      </tr>
++      <tr>
++        <td>4:50 - 6:10</td>
++        <td>CC5 Lab</td>
++        <td>M305</td>
++        <td>Sir Jessie</td>
++      </tr>
++      <tr>
++        <td rowspan="2">Wednesday</td>
++        <td>7:30 - 8:50</td>
++        <td>SocSci101N</td>
++        <td>S237</td>
++        <td>Ma'am Florida</td>
++      </tr>
++      <tr>
++        <td>8:50 - 10:10</td>
++        <td>Science100</td>
++        <td>S230</td>
++        <td>Ma'am Jill</td>
++      </tr>
++      <tr>
++        <td rowspan="4">Saturday</td>
++        <td>7:30 - 8:50</td>
++        <td>CIT5</td>
++        <td rowspan="2">U805</td>
++        <td>Sir Luis</td>
++      </tr>
++      <tr>
++        <td>8:50 - 10:10</td>
++        <td>CIT1</td>
++        <td>Ma'am Ortiz</td>
++      </tr>
++      <tr>
++        <td>11:30 - 12:50</td>
++        <td>CIT14 Lab</td>
++        <td>M304</td>
++        <td>Sir Prim</td>
++      </tr>
++      <tr>
++        <td>4:50 - 6:10</td>
++        <td>CC5 Lab</td>
++        <td>M305</td>
++        <td>Sir Jessie</td>
++      </tr>
++    </tbody>
++  </table>
++</body>
++</html>
++    
+\ No newline at end of file
+diff --git a/WebTech/semantic.html b/WebTech/semantic.html
+new file mode 100644
+index 0000000..a918a58
+--- /dev/null
++++ b/WebTech/semantic.html
+@@ -0,0 +1,41 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Lab_Activity_8:_HTML_Semantic_Elements</title>
++</head>
++<h1>Lab Activity 8: HMTL Semantic Elements</h1>
++<body>
++    <header>
++        <h1>My Developer Portfolio</h1>
++        <p>Welcome to my semantic web page</p>
++    </header>
++    <nav>
++        <ul>
++            <li><a href="#home">Home</a></li>
++            <li><a href="#about">About</a></li>
++            <li><a href="#article">Article</a></li>
++            <li><a href="#contact">Contact</a></li>
++        </ul>
++    </nav>
++    <main>
++        <section>
++            <h2>Latest Insight</h2>
++            <p>Explore our featured tech articles and resources for aspiring developers.</p>
++        </section>
++        <article>
++            <h2>The importance of Web Development Skills</h2>
++            <p><strong>Published on:</strong> November 7, 2026 | <strong>By:</strong>Web Dev Student</p>
++            <p>In today's digital-first world, web development has evolved from a niche technical hobby into one of the most valuable core competencies across multiple industries. Whether you are building an e-commerce platform, launching a startup, or managing content for a global enterprise, understanding how the web works gives you an undeniable edge.</p>
++            <h3>1. Empowering Creativity and Problem Solving</h3>
++            <p>Web development teaches you how to break down complex problems into manageable, logical pieces. Writing HTML, CSS, and JavaScript trains your mind to think structurally and creatively, turning a blank screen into an interactive user experience.</p>
++            <h3>2. High Career Flexibility and Demand</h3>
++            <p>Almost every business requires a web presence. Organizations are constantly looking for professionals who can design, maintain, and optimize their digital platforms. Possessing these skills opens doors to remote work, freelance projects, and traditional tech careers alike.</p>
++        </article>
++    </main>
++    <footer>
++        <p>&copy; 2026 Student Lab Activity. All rights reserved.</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/01-basic.html b/emmet-laboratory/01-basic.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/emmet-laboratory/02-classes-ids.html b/emmet-laboratory/02-classes-ids.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/emmet-laboratory/03-navigation.html b/emmet-laboratory/03-navigation.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/emmet-laboratory/04-form.html b/emmet-laboratory/04-form.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/emmet-laboratory/05-semantic.html b/emmet-laboratory/05-semantic.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/emmet-laboratory/images/profile.png b/emmet-laboratory/images/profile.png
+new file mode 100644
+index 0000000..c0138ca
+Binary files /dev/null and b/emmet-laboratory/images/profile.png differ
+diff --git a/emmet-laboratory/index.html b/emmet-laboratory/index.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+new file mode 100644
+index 0000000..e69de29
+
+commit 511d4d557e1e419f2c09ef093b8041a9e2dc95d6
+Author:     Nakiri6996 <pueganmayer@gmail.com>
+AuthorDate: 2026-09-15 11:52:54 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-15 11:52:54 +0800
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..b407ac5
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++# WebTech
+\ No newline at end of file
