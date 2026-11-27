@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>My First Blog</h1>
+        <p>The CSS box model describes how every element is built from content, padding, a border, and a margin. Here are my reflections on how these parts work together.</p>
+    </header>
+
+    <main class="card-container">
+        <div class="card">
+            <h2>How does padding differ from margin?</h2>
+            <p>Padding is the space inside an element, between its content and its border, and it shows the element's background color. Margine is the space outside the border that pushes other elements away, and it is always transparent.</p>
+        </div>
+
+        <div class="card">
+            <h2>What does box-sizing: border=box do?</h2>
+            <p>It makes the width and height inculde the padding and border. A card set to 280px wide stays 280px wide in total. Without it, the padding and border are added on top, making the card wider than expected.</p>
+        </div>
+
+        <div class="card">
+            <h2>How can excessive margin affect a layout?</h2>
+            <p>Too much margin pushes elements far apart and wastes space. It can force cards to wrap onto the next row, create big gaps, or cause overflow and unwanted scrollbars, especially on small screens.</p>
+        </div>
+    </main>
+    <link rel="stylesheet" href="style4.css">
+</body>
+</html>
